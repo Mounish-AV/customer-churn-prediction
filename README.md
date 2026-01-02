@@ -95,38 +95,37 @@ churn_probabilities = predict_proba(model, new_customers)
 
 ```
 CustomerChurn/
-├── config.yaml                    # Complete configuration
-├── requirements.txt               # All dependencies
-├── download_data.py               # Data download script
-├── test_basic.py                  # Basic pipeline test ✅
-├── test_pipeline.py               # Full pipeline test ✅
+├── config.yaml                    
+├── requirements.txt              
+├── download_data.py              
+├── test_basic.py                  
+├── test_pipeline.py               
 │
 ├── data/
-│   ├── raw/                       # Raw dataset (7,043 records)
-│   └── processed/                 # Train/val/test splits
+│   ├── raw/                       
+│   └── processed/               
 │
 ├── models/
-│   ├── baseline/                  # Baseline models
-│   ├── experiments/               # All trained models
-│   └── production/                # Best model (85.74% ROC-AUC)
-│       ├── best_model.pkl         # Production model
-│       ├── scaler.pkl             # Feature scaler
-│       └── feature_names.pkl      # Feature list
+│   ├── baseline/                 
+│   ├── experiments/               
+│   └── production/                
+│       ├── best_model.pkl         
+│       ├── scaler.pkl             
+│       └── feature_names.pkl     
 │
-├── reports/figures/               # Visualizations
+├── reports/figures/               
 │   ├── confusion_matrix.png
 │   ├── roc_curve.png
 │   └── feature_importance.png
 │
-└── src/                           # Source code (11 modules)
-    ├── data/                      # Loading, validation, preprocessing
-    ├── features/                  # Feature engineering
-    ├── models/                    # Training, prediction, evaluation
-    ├── utils/                     # Logging, helpers
-    └── visualization/             # Plotting functions
+└── src/                           
+    ├── data/                      
+    ├── features/                 
+    ├── models/                   
+    ├── utils/                  
+    └── visualization/             
 ```
 
-> 📖 For complete file inventory, see [FILES_CREATED.md](FILES_CREATED.md)
 
 ## 🔄 Pipeline Architecture
 
