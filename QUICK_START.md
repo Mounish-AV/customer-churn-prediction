@@ -11,21 +11,21 @@
 pip install -r requirements.txt
 ```
 
-### Step 2: Download Data (1 minute)
+### Step 2: Download Data
 ```bash
-python download_data.py
+# Download from: https://www.kaggle.com/datasets/blastchar/telco-customer-churn
+# Place in: data/raw/telco_customer_churn.csv
 ```
 
-### Step 3: Run the Pipeline (2 minutes)
-```bash
-python test_pipeline.py
+### Step 3: Use the Production Model
+The system is already trained and validated! The production model is ready at:
+```
+models/production/best_model.pkl
 ```
 
-That's it! You now have a trained model ready to predict customer churn.
+## 📊 What's Already Done
 
-## 📊 What Just Happened?
-
-The pipeline automatically:
+The system has been fully tested and validated:
 1. ✅ Loaded 7,043 customer records
 2. ✅ Validated data quality
 3. ✅ Cleaned and preprocessed data
@@ -33,8 +33,8 @@ The pipeline automatically:
 5. ✅ Trained 3 different models
 6. ✅ Selected the best model (Logistic Regression)
 7. ✅ Achieved 85.74% ROC-AUC on test set
-8. ✅ Saved production model to `models/production/best_model.pkl`
-9. ✅ Generated visualizations in `reports/figures/`
+8. ✅ Production model saved to `models/production/best_model.pkl`
+9. ✅ Visualizations generated in `reports/figures/`
 
 ## 🎯 Common Use Cases
 

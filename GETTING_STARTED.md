@@ -23,22 +23,20 @@ python --version
 python -c "import pandas, numpy, sklearn, xgboost, yaml; print('✅ All dependencies ready!')"
 ```
 
-### Step 2: Run Tests
+### Step 2: Download Dataset
 ```bash
-# Basic test (5 seconds)
-python test_basic.py
-
-# Full pipeline test (30 seconds)
-python test_pipeline.py
+# Download from Kaggle:
+# https://www.kaggle.com/datasets/blastchar/telco-customer-churn
+# Place in: data/raw/telco_customer_churn.csv
 ```
 
-### Step 3: Check Results
-After running `test_pipeline.py`, you should see:
+### Step 3: Use the System
+The system has been fully tested and validated:
 ```
 ✅ Best Model: Logistic Regression
 ✅ Test ROC-AUC: 0.8574 (85.74%)
 ✅ Test Accuracy: 0.8136 (81.36%)
-✅ Model saved to: models/production/best_model.pkl
+✅ Production model: models/production/best_model.pkl
 ```
 
 ## 📚 Documentation Guide
@@ -51,10 +49,7 @@ After running `test_pipeline.py`, you should see:
 ### For Detailed Information
 - **[FINAL_SUMMARY.md](FINAL_SUMMARY.md)** - Complete project summary with results
 - **[PROJECT_STATUS.md](PROJECT_STATUS.md)** - Detailed implementation status
-- **[FILES_CREATED.md](FILES_CREATED.md)** - Complete file inventory
-
-### For Updates
-- **[UPDATES_SUMMARY.md](UPDATES_SUMMARY.md)** - Recent documentation updates
+- **[CONTRIBUTING.md](CONTRIBUTING.md)** - Contribution guidelines
 
 ## 🎓 What to Read Based on Your Goal
 
@@ -62,16 +57,13 @@ After running `test_pipeline.py`, you should see:
 → Start with **[README.md](README.md)**
 
 ### "I want to run the system and see it work"
-→ Follow **[QUICK_START.md](QUICK_START.md)** or **[RUN_TESTS.md](RUN_TESTS.md)**
+→ Follow **[QUICK_START.md](QUICK_START.md)**
 
 ### "I want to use the model for predictions"
 → See the prediction examples in **[QUICK_START.md](QUICK_START.md)**
 
 ### "I want to see detailed results and metrics"
 → Read **[FINAL_SUMMARY.md](FINAL_SUMMARY.md)**
-
-### "I want to know what files were created"
-→ Check **[FILES_CREATED.md](FILES_CREATED.md)**
 
 ### "I want to understand the implementation status"
 → Review **[PROJECT_STATUS.md](PROJECT_STATUS.md)**
@@ -105,10 +97,10 @@ xdg-open reports/figures/confusion_matrix.png
 xdg-open reports/figures/roc_curve.png
 ```
 
-### Check Model Performance
+### Check Model Files
 ```bash
-# View the last 30 lines of pipeline output
-python test_pipeline.py 2>&1 | tail -30
+# View production model files
+ls -lh models/production/
 ```
 
 ## 📊 Key Performance Metrics
@@ -149,19 +141,19 @@ CustomerChurn/
 
 ## ✅ Next Steps
 
-1. **Run the tests** to verify everything works
-2. **Review the results** in the terminal output
+1. **Download the dataset** from Kaggle
+2. **Review the code** in `src/` modules
 3. **Check the visualizations** in `reports/figures/`
 4. **Try making predictions** using the code examples
 5. **Read the detailed documentation** for deeper understanding
 
 ## 🆘 Need Help?
 
-- **Testing Issues**: See [RUN_TESTS.md](RUN_TESTS.md) troubleshooting section
 - **Usage Questions**: Check [QUICK_START.md](QUICK_START.md) for examples
 - **Technical Details**: Review [FINAL_SUMMARY.md](FINAL_SUMMARY.md)
+- **Implementation Status**: See [PROJECT_STATUS.md](PROJECT_STATUS.md)
 
 ---
 
-**Ready to get started? Run `python test_pipeline.py` and see the magic happen! ✨**
+**Ready to get started? Check out the production model in `models/production/`! ✨**
 

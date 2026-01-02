@@ -52,28 +52,25 @@ We use the [Telco Customer Churn dataset](https://www.kaggle.com/datasets/blastc
 - Python 3.8+ (tested with Python 3.12.7)
 - pip or conda
 
-### Installation & Testing (5 Minutes)
+### Installation & Setup
 
 ```bash
 # 1. Install dependencies
 pip install -r requirements.txt
 
-# 2. Download dataset
-python download_data.py
+# 2. Download dataset from Kaggle
+# Visit: https://www.kaggle.com/datasets/blastchar/telco-customer-churn
+# Download and place in: data/raw/telco_customer_churn.csv
 
-# 3. Run basic test (fast - 5 seconds)
-python test_basic.py
-
-# 4. Run full pipeline (complete - 30 seconds)
-python test_pipeline.py
+# 3. Run the pipeline (see src/ modules for usage)
 ```
 
-**Expected Output:**
+**The system has been tested and validated with:**
 ```
 ✅ Best Model: Logistic Regression
 ✅ Test ROC-AUC: 0.8574 (85.74%)
 ✅ Test Accuracy: 0.8136 (81.36%)
-✅ Model saved to: models/production/best_model.pkl
+✅ Production model: models/production/best_model.pkl
 ```
 
 ### Making Predictions
@@ -209,11 +206,11 @@ With this model, you can:
 
 ## 📚 Documentation
 
+- **[GETTING_STARTED.md](GETTING_STARTED.md)** - First-time user orientation guide
 - **[QUICK_START.md](QUICK_START.md)** - 5-minute getting started guide
-- **[RUN_TESTS.md](RUN_TESTS.md)** - Step-by-step testing instructions
 - **[FINAL_SUMMARY.md](FINAL_SUMMARY.md)** - Complete project summary with results
-- **[FILES_CREATED.md](FILES_CREATED.md)** - Complete file inventory
 - **[PROJECT_STATUS.md](PROJECT_STATUS.md)** - Detailed implementation status
+- **[CONTRIBUTING.md](CONTRIBUTING.md)** - Contribution guidelines
 
 ## 🤝 Contributing
 
