@@ -228,7 +228,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👤 Author
 
-**Mounish AV**
+**Mounish V**
 - GitHub: [@Mounish-AV](https://github.com/Mounish-AV)
 
 ## 🙏 Acknowledgments
